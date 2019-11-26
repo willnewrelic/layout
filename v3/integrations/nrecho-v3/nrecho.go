@@ -8,6 +8,6 @@ import (
 )
 
 func init() {
-	fmt.Println("echo version", echo.Version)
+	fmt.Println("echo error", echo.ErrUnsupportedMediaType.Error())
 	fmt.Println("agent version", newrelic.Version)
 }
